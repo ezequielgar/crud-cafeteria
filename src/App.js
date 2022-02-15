@@ -7,19 +7,45 @@ import ProductsTable from "./components/views/ProductsTable/ProductsTable";
 import ProductCreate from "./components/views/ProductCreate/ProductCreate";
 import ProductEdit from "./components/views/ProductEdit/ProductEdit";
 import Error404 from "./components/views/Error404/Error404";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useState, useEffect } from "react";
 
 function App() {
+  // State
+  const [products, setProducts] = useState([]);
+  // Variable de entorno
+  const URL = process.env.REACT_APP_API_CAFETERIA;
+
+  useEffect(() => {
+    geApi();
+  }, []);
+
+  const geApi = async () => {
+    try {
+      const res = await fetch(URL);
+      const productAppi = await res.json();
+      console.log(productAppi)
+      setProducts(productAppi);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   return (
     <div>
-      <Navigation />
-      <main>
-        <Home />
-        {/* <ProductsTable /> */}
-        {/* <ProductCreate/> */}
-        {/* <ProductEdit/> */}
-        {/* <Error404/> */}
-      </main>
-      <Footer />
+      <BrowserRouter>
+        <Navigation />
+        <main>
+          <Routes>
+            <Route exact path="/" element={<Home />} />
+            <Route exact path="/product/table" element={<ProductsTable products={products} />} />
+            <Route exact path="/product/create" element={<ProductCreate />} />
+            <Route exact path="/product/edit" element={<ProductEdit />} />
+            <Route exact path="*" element={<Error404 />} />
+          </Routes>
+        </main>
+        <Footer />
+      </BrowserRouter>
     </div>
   );
 }

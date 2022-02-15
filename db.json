@@ -1,0 +1,19 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "productName": "Cafe",
+      "price": "$50",
+      "urlImg": "http://www.cafe.com",
+      "category": "bebida-caliente"
+    },
+    {
+      "id": 2,
+      "productName": "Licuado",
+      "price": "$100",
+      "urlImg": "http://www.cafe.com",
+      "category": "bebida-fria"
+    }
+  ]
+ 
+}
