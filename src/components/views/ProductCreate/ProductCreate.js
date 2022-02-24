@@ -10,7 +10,7 @@ import {
 } from "../../helpers/ValidateFields";
 
 // states
-const ProductCreate = ({ URL, geApi }) => {
+const ProductCreate = ({ URL, getApi }) => {
   const [productName, setProductsName] = useState("");
   const [price, setPrice] = useState("0");
   const [urlImg, seturlImg] = useState("");
@@ -58,9 +58,9 @@ const ProductCreate = ({ URL, geApi }) => {
             },
             body: JSON.stringify(newProduct),
           });
-          if (res.status == 201) {
+          if (res.status === 201) {
             Swal.fire("Created!", "Your file has been create.", "success");
-            geApi();
+            getApi();
             navigate("/product/table");
             
           }

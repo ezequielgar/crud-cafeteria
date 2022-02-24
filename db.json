@@ -1,21 +1,21 @@
 {
   "products": [
     {
-      "id": 1,
-      "productName": "Cafe",
-      "price": "$50",
+      "productName": "Mate Cocido",
+      "price": "602",
       "urlImg": "http://www.cafe.com",
-      "category": "bebida-caliente"
+      "category": "bebida-caliente",
+      "id": 1
     },
     {
       "id": 2,
       "productName": "Licuado",
-      "price": "$100",
+      "price": "100",
       "urlImg": "http://www.cafe.com",
       "category": "bebida-fria"
     },
     {
-      "productName": "prueba",
+      "productName": "tosasta",
       "price": "147",
       "urlImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Cumulonimbo_SE_de_Caracas.jpg/400px-Cumulonimbo_SE_de_Caracas.jpg",
       "category": "bebida-fria",
@@ -48,6 +48,20 @@
       "urlImg": "https://www.nespresso.com/ncp/res/uploads/recipes/nespresso-recipes-Espresso-Macchiato.jpg",
       "category": "bebida-caliente",
       "id": 7
+    },
+    {
+      "productName": "prueba",
+      "price": "80",
+      "urlImg": "https://sweetalert2.github.io/images/SweetAlert2.png",
+      "category": "bebida-fria",
+      "id": 8
+    },
+    {
+      "productName": "prueba dos",
+      "price": "33",
+      "urlImg": "https://sweetalert2.github.io/images/SweetAlert2.png",
+      "category": "sandwitch",
+      "id": 9
     }
   ]
 }
