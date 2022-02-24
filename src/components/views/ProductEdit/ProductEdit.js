@@ -74,7 +74,7 @@ const ProductEdit = ({ URL, getApi }) => {
             body: JSON.stringify(productUpdate),
           });
 
-          if (res.status == 200) {
+          if (res.status === 200) {
             Swal.fire("Update!", "Your file has been update.", "success");
             getApi();
             navigate('/product/table');

@@ -1,62 +1,6 @@
 {
   "products": [
     {
-      "productName": "Mate Cocido",
-      "price": "602",
-      "urlImg": "http://www.cafe.com",
-      "category": "bebida-caliente",
-      "id": 1
-    },
-    {
-      "id": 2,
-      "productName": "Licuado",
-      "price": "100",
-      "urlImg": "http://www.cafe.com",
-      "category": "bebida-fria"
-    },
-    {
-      "productName": "tosasta",
-      "price": "147",
-      "urlImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Cumulonimbo_SE_de_Caracas.jpg/400px-Cumulonimbo_SE_de_Caracas.jpg",
-      "category": "bebida-fria",
-      "id": 3
-    },
-    {
-      "productName": "medialunas",
-      "price": "15",
-      "urlImg": "https://www.recetips.com/uploads/recetas_c2452f8312a07268892feaa3f37248e4.jpg",
-      "category": "dulce",
-      "id": 4
-    },
-    {
-      "productName": "Capuccino",
-      "price": "125",
-      "urlImg": "https://exigibuencafe.com/wp-content/uploads/2017/12/exigi-5-1000x600.jpg",
-      "category": "bebida-caliente",
-      "id": 5
-    },
-    {
-      "productName": "Expresso Macchiato",
-      "price": "150",
-      "urlImg": "https://www.nespresso.com/ncp/res/uploads/recipes/nespresso-recipes-Espresso-Macchiato.jpg",
-      "category": "bebida-caliente",
-      "id": 6
-    },
-    {
-      "productName": "Expresso Macchiato",
-      "price": "150",
-      "urlImg": "https://www.nespresso.com/ncp/res/uploads/recipes/nespresso-recipes-Espresso-Macchiato.jpg",
-      "category": "bebida-caliente",
-      "id": 7
-    },
-    {
-      "productName": "prueba",
-      "price": "80",
-      "urlImg": "https://sweetalert2.github.io/images/SweetAlert2.png",
-      "category": "bebida-fria",
-      "id": 8
-    },
-    {
       "productName": "prueba dos",
       "price": "33",
       "urlImg": "https://sweetalert2.github.io/images/SweetAlert2.png",
