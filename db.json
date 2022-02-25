@@ -1,11 +1,3 @@
 {
-  "products": [
-    {
-      "productName": "prueba dos",
-      "price": "33",
-      "urlImg": "https://sweetalert2.github.io/images/SweetAlert2.png",
-      "category": "sandwitch",
-      "id": 9
-    }
-  ]
+  "products": []
 }

@@ -3,7 +3,7 @@ import { Container, Table } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Product from "./Product/Product";
 
-const ProductTable = ({ products , URL , getApi}) => {
+const ProductTable = ({ products, URL, getApi }) => {
   return (
     <div>
       <Container className="py-5">
@@ -18,6 +18,9 @@ const ProductTable = ({ products , URL , getApi}) => {
         </div>
         <hr />
         {/* Table of products */}
+
+        
+
         <Table bordered hover responsive className="align-middle mt-3">
           <thead>
             <tr>
@@ -31,11 +34,18 @@ const ProductTable = ({ products , URL , getApi}) => {
           </thead>
           <tbody>
             {products.map((product) => (
-              <Product key={product.id} product={product} URL={URL} getApi={getApi} />
+              <Product
+                key={product.id}
+                product={product}
+                URL={URL}
+                getApi={getApi}
+              />
             ))}
-          </tbody> 
+          </tbody>
         </Table>
+
         {/* No products found message */}
+
         {/* <div className="no-products-found d-flex align-items-center justify-content-center">
           <h1>🥐 No products found ☕</h1>
         </div> */}
